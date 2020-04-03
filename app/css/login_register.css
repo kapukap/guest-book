@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    background-color: #313c3e;
+}
+
+.auth_wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 600px;
+    margin: 0 auto;
+
+}
+
+.auth_wrapper--color_theme{
+
+    margin: auto 0;
+    background-color: white;
+
+}
+
+
+.auth_wrapper--color_theme h1{
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+.auth_wrapper--color_theme form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.auth_wrapper--color_theme input{
+    margin: 10px 0;
+    border: 1px solid black;
+    /*border-radius: 10px;*/
+    font-size: 18px;
+    padding: 0 5px;
+}
+
+.auth_wrapper--color_theme input[type='submit']{
+    border-radius: 10px;
+    background-color: white;
+    transition: .3s;
+    padding: 2px 20px;
+}
+
+.auth_wrapper--color_theme input[type='submit']:hover{
+    background-color: #9a9a9a;
+    color: white;
+}
+
+
+
+
+
+.auth_wrapper--color_theme a:visited{
+    color: black;
+}
+
+
+
+.go_login, .go_registration{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px 0;
+}
+
+
+.go_registration__btn, .go_login__btn{
+    padding: 5px 0;
+    overflow: hidden;
+}
+
+
+.to_main,.to_registration, .to_login{
+    position: relative;
+    overflow: hidden;
+}
+
+.to_main::after, .to_registration::after, .to_login::after{
+    content: '';
+    transition: .3s;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: red;
+    left: 0;
+    top: 150%;
+
+    transform:  rotate(90deg) translateX(45px) translateY(45px);
+}
+
+.to_registration::after{
+    transform:  rotate(90deg) translateX(60px) translateY(45px)
+}
+
+.to_main:hover::after, .to_registration:hover::after, .to_login:hover::after{
+    top: 100%;
+    transform: rotate(0deg) translateX(0px) translateY(0px);
+}

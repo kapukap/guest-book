@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+header {
+    background-color: #3d3d3d;
+    display: flex;
+    padding: 15px 0;
+}
+
+header h1 {
+    color: white;
+}
+
+.wrapper {
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+header .wrapper {
+    justify-content: space-between;
+}
+
+.h-buttons {
+    display: flex;
+    align-items: center;
+    width: 230px;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+
+}
+
+.h-buttons__button--login {
+    background-color: #839D42;
+}
+
+.h-buttons__button--login:hover {
+    background-color: #a5cf4f;
+}
+
+.h-buttons__button--register {
+    background-color: #ff9400;
+}
+
+.h-buttons__button--register:hover {
+    background-color: #ffb700;
+}
+
+
+.content {
+    display: flex;
+    padding-top: 50px;
+
+}
+
+.content-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-block__text {
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    width: 470px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+
+.content-block__text::-webkit-scrollbar {
+    width: 5px;
+
+
+}
+
+.content-block__text::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+.content-block__text::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.content-block__text::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+.content-block__text--comment {
+    width: 400px;
+    margin: 15px 0; /*auto*/
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+
+.content-block__text--comment:hover .time{
+    color: #383838;
+}
+
+.comment_info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.time{
+    color: #e5e5e5;
+    transition: .3s;
+}
+
+
+.content-block__add {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background: #3d3d3d;
+    padding: 5px;
+    margin-top: 30px;
+}
+
+.content-block__add, #content-block__add--textArea {
+    color: #cfd9ce;
+}
+
+.content-block__add h2 {
+    padding: 50px 115px;
+}
+
+
+#content-block__add--textArea {
+    background: transparent;
+    resize: none;
+    font-size: 18px;
+    margin: 15px auto;
+    padding: 5px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    width: 370px;
+
+
+}
+
+
+#content-block__add--textArea::placeholder {
+    color: white;
+}
+
+.btn__main{
+    display: flex;
+    justify-content: center;
+}
+

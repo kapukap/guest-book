@@ -1,0 +1,109 @@
+.user_panel{
+    display: flex;
+    align-items: center;
+}
+
+.user_panel--username{
+    padding-right: 20px;
+    color: white;
+}
+
+.user_panel__btn{
+    background-color: #bd0000;
+    transition: .3s;
+}
+
+.user_panel__btn:hover{
+    background-color: #d60000;
+    border: 1px solid black;
+}
+
+.user_panel__btn:hover .user_panel__btn--logout{
+    color: white;
+    transition: .3s;
+}
+
+.user_panel__btn--logout{
+    color: black;
+
+}
+
+.comments-block{
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 150px);
+    justify-content: space-between;
+}
+
+.content-block__comments{
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 300px);
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.user_class{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    margin-right: 30px;
+}
+
+
+
+
+.content-block__comments::-webkit-scrollbar {
+    width: 5px;
+
+
+}
+
+.content-block__comments::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+.content-block__comments::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.content-block__comments::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.content-block__inputs{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.content-block__inputs #content-block__add--textArea{
+    display: flex;
+    width: 50%;
+    font-size: 24px;
+    resize: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+.button__wrapper{
+    /*width: 200px;*/
+    /*margin: 0 auto;*/
+    margin-left: 25px;
+}
+
+.button__wrapper--submit{
+    background-color: black;
+    /*padding: 15px 50px;*/
+    font-size: 24px;
+}
+
+.button__wrapper--submit:hover{
+    background-color: rgba(0, 0, 0, 0.49);
+}
