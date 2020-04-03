@@ -75,21 +75,21 @@ $query = "SELECT comments.user_id, comments.comment_id, comments.comment, commen
         </div>
 
 
-        <!--        <div class="">-->
+
         <form action="comments/create.php" class="content-block__inputs" method="post">
             <label for="txt"></label>
-            <textarea name="comment" id="txt" cols="" rows="2"></textarea>
+            <textarea name="comment" class="" id="text" cols="" rows="2"></textarea>
             <div class="button__wrapper">
                 <input type="submit" class="btn button__wrapper--submit" value="Отправить">
             </div>
 
         </form>
-        <!--        </div>-->
+
     </div>
 </section>
 
 
-<link rel="stylesheet" href="../css/authorized.css">
+<!--<link rel="stylesheet" href="../css/authorized.css">-->
 <script src="../js/controls.js"></script>
 </body>
 </html>

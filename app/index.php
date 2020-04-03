@@ -1,11 +1,13 @@
-<?php include_once 'config.php'; ?>
+<?php
+include_once 'php/config.php';
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Jomolhari|Oswald&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -14,10 +16,10 @@
         <h1>Гостевая книга</h1>
         <div class="h-buttons">
             <div class="h-buttons__button">
-                <a href="auth/login.php" class="h-buttons__button--login btn">Авторизация</a>
+                <a href="php/auth/login.php" class="h-buttons__button--login btn">Авторизация</a>
             </div>
             <div class="h-buttons__button">
-                <a href="auth/register.php" class="h-buttons__button--register btn">Регистрация</a>
+                <a href="php/auth/register.php" class="h-buttons__button--register btn">Регистрация</a>
             </div>
         </div>
     </div>
@@ -43,14 +45,15 @@
             ?>
 
         </div>
-        <form class="content-block__add" method="get" action="auth/login.php">
+        <form class="content-block__add" method="get" action="php/auth/login.php">
             <h2>Что вы думаете о нас?</h2>
             <label for="content-block__add--textArea"></label>
             <textarea name="nonautorized" id="content-block__add--textArea" cols="30" rows="10"
                       placeholder="Добавьте комментарий..."></textarea>
-            <div class="btn__main">
+            <div class="content-block__add--btn">
                 <input class="btn" type="submit" value="Отправить">
             </div>
+
         </form>
     </div>
 </section>

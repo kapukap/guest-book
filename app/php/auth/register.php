@@ -79,7 +79,7 @@ if (!empty($_POST)) {
                 <a href="login.php" class="to_login">Login Form</a>
             </div>
             <div class="go_login__btn">
-                <a href="../index.php" class="to_main">To main page</a>
+                <a href="../../index.php" class="to_main">To main page</a>
             </div>
         </div>
     </div>

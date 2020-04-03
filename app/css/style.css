@@ -39,7 +39,7 @@ header .wrapper {
     padding: 5px 10px;
     border: 1px solid white;
     border-radius: 10px;
-    color: white;
+    color: black;
 
 }
 
@@ -158,13 +158,23 @@ header .wrapper {
 
 }
 
-
 #content-block__add--textArea::placeholder {
     color: white;
 }
 
-.btn__main{
+
+
+.content-block__add--btn{
     display: flex;
     justify-content: center;
+}
+
+.content-block__add--btn .btn{
+    transition: .3s;
+}
+
+.content-block__add--btn .btn:hover{
+    color: white;
+    background-color: black;
 }
 

@@ -81,7 +81,7 @@ if (!empty($_POST)) {
                 <a href="register.php" class="to_registration">Registration Form</a>
             </div>
             <div class="go_registration__btn">
-                <a href="../index.php" class="to_main">To main page</a>
+                <a href="../../index.php" class="to_main">To main page</a>
             </div>
         </div>
     </div>

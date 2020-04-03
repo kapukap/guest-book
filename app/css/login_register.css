@@ -4,6 +4,7 @@
     text-decoration: none;
 }
 
+
 body{
     background-color: #313c3e;
 }
@@ -62,7 +63,7 @@ body{
 
 
 
-.auth_wrapper--color_theme a:visited{
+.auth_wrapper--color_theme a, .auth_wrapper--color_theme a:visited{
     color: black;
 }
 
